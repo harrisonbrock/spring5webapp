@@ -1,8 +1,10 @@
 package guru.springframework.spring5webapp.model;
 
+import javax.persistence.Entity;
 import java.util.HashSet;
 import java.util.Set;
 
+@Entity
 public class Book {
     private String Title;
     private String isbn;
