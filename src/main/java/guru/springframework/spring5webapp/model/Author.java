@@ -1,9 +1,6 @@
 package guru.springframework.spring5webapp.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -16,6 +13,7 @@ public class Author {
     private String firstName;
     private String lastName;
 
+    @ManyToMany
     private Set<Book> books = new HashSet<>();
 
 
